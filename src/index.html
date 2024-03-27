@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="section--one">
+        <div>
+          <p class="one">DAY</p>
+          <input
+            type="number"
+            maxlength="2"
+            placeholder="DD"
+            class="day"
+            id="btn--in"
+          />
+          <p class="require"></p>
+        </div>
+        <div>
+          <p class="two">MONTH</p>
+          <input
+            type="number"
+            maxlength="2"
+            placeholder="MM"
+            class="month"
+            id="btn--in"
+          />
+          <p class="requires"></p>
+        </div>
+        <div>
+          <p class="three">YEAR</p>
+          <input type="number" placeholder="YYYY" class="year" id="btn--in" />
+          <p class="requirese"></p>
+        </div>
+      </div>
+
+      <!-- Line  -->
+      <div class="linebox">
+        <div class="line"></div>
+        <button class="round">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="44"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Date -->
+      <div class="date">
+        <p><span class="slashthree">--</span> years</p>
+        <p><span class="slashtwo">--</span> months</p>
+        <p><span class="slashone">--</span> days</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with ♥️ by Israel</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

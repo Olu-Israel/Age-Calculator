@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  background-color: #fff;
+  max-width: 45rem;
+  margin: 50px auto;
+  padding: 50px 0;
+  border-radius: 20px 20px 70px 20px;
+}
+.section--one {
+  display: flex;
+  gap: 30px;
+  justify-content: start;
+  padding-left: 50px;
+}
+.section--one p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: hsl(0, 1%, 44%);
+}
+.section--one input {
+  height: 4rem;
+  width: 8rem;
+  border: 0.5px solid #dcdcdc;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+p .require {
+  content: "";
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: red;
+}
+
+/* Line */
+.linebox {
+  display: flex;
+  align-items: center;
+}
+.line {
+  content: "";
+  width: 32rem;
+  margin-left: 50px;
+  margin-top: 20px;
+  border: 1px solid #ececec;
+}
+.round {
+  border: none;
+  background-color: transparent;
+}
+.round svg {
+  background-color: hsl(259, 100%, 65%);
+  color: #fff;
+  height: 40px;
+  border-radius: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+.round svg:hover {
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* Date */
+.date p {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding-left: 50px;
+  font-size: 72px;
+  font-weight: 900;
+  font-style: italic;
+}
+.date p span {
+  color: hsl(259, 100%, 65%);
+  font-style: italic;
+}
+footer p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 23rem;
+  }
+  .section--one {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    gap: 17px;
+  }
+  .section--one p {
+    font-size: 13px;
+  }
+  .section--one input {
+    width: 5rem;
+    font-size: 15px;
+    padding-left: 0;
+    height: 3.5rem;
+  }
+  .require {
+    content: "";
+    font-size: 5px;
+  }
+
+  .linebox {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .line {
+    content: "";
+    width: 270px;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+  .round svg {
+    height: 37px;
+    padding: 12px;
+    transform: translate(-220%, 25%);
+  }
+  .date {
+    padding-top: 20px;
+  }
+  .date p {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  footer p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+}
