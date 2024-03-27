@@ -69,7 +69,7 @@ btnTapped.addEventListener("click", function () {
   // User Month
   if (!userMonth) {
     ifNotUsermonth();
-  } else if (userMonth >= month) {
+  } else if (userMonth > month && userMonth > newMonth) {
     document.querySelector(".month").style.borderColor = "hsl(0, 100%, 67%)";
     document.querySelector(".two").style.color = "hsl(0, 100%, 67%)";
     document.querySelector(".requires").textContent = "Invalid Month";
